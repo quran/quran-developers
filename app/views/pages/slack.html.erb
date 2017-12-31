@@ -1,0 +1,16 @@
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-6 offset-3">
+      <h2>Join our slack community</h2>
+    </div>
+    <div class="col-6 offset-3 pt-3">
+      <%= simple_form_for @developer do |f| %>
+        <%= f.input :first_name, placeholder: 'John' %>
+        <%= f.input :last_name, placeholder: 'Doe' %>
+        <%= f.input :email, placeholder: 'me@domain.com' %>
+        <%= f.input :github, placeholder: '@username' %>
+        <%= f.button :submit, 'Submit' %>
+      <% end %>
+    </div>
+  </div>
+</div>
